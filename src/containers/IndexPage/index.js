@@ -1,10 +1,45 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+
+
+
 const Card = styled.div`
-  width: 480px;
-  height: 640px;
-  border: solid 1px black;
+
+.logo {
+    font-size: 70px
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  
+.church-text {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+  }
+
+
+  .name-text {
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 30px;
+    text-indent: 30px;
+    color: white;
+  }  
+
+  .ekk-image {
+  margin-top: 150px;
+  } 
+
+
+  .card {
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: hsl(215, 62%, 21%);
+  }
 `;
 
 const A = styled.a``;
@@ -12,7 +47,7 @@ const A = styled.a``;
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   position: relative;
   min-height: 100vh;
   
@@ -23,12 +58,19 @@ const Wrapper = styled.div`
   }
 `;
 
+
+
+
 const IndexPage = () => (
   <Wrapper>
-    <Card />
-    <Link href='/about' passHref>
-      <A>About Page</A>
-    </Link>
+    <Card>
+      <div className='card'>
+       <img className='logo' src='/static/logo.svg' />
+       <p className='church-text'>新生命小組教會</p>
+       <p className='name-text'>章峻誠</p>
+       <img className='ekk-image' src='/static/ekk.svg' />
+      </div>
+    </Card>
   </Wrapper>
 );
 

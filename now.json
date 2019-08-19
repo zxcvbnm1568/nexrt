@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "alias": "nextjs-template",
-  "name": "nextjs-template",
+  "alias": "lostsong-template",
+  "name": "lostsong-template",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
   ]

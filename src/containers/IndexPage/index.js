@@ -7,13 +7,14 @@ import styled from 'styled-components';
 const Card = styled.div`
 
 .logo {
-    font-size: 70px
+    width: 350px;
     margin-top: 50px;
-    margin-left: 0px;
+    margin-left: 20px;
   }
   
 .church-text {
     font-size: 50px;
+    margin-top: 50px;
     text-align: center;
     color: white;
   }
@@ -22,6 +23,7 @@ const Card = styled.div`
   .name-text {
     font-size: 70px;
     font-weight: 300;
+    margin-top: 20px;
     text-align: center;
     letter-spacing: 30px;
     text-indent: 30px;
@@ -29,7 +31,7 @@ const Card = styled.div`
   }  
 
   .ekk-image {
-  margin-top: 150px;
+  margin-top: 85px;
   } 
 
 
